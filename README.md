@@ -1,4 +1,4 @@
-# hello-world
+# California Calling
 
 ## Project setup
 ```
