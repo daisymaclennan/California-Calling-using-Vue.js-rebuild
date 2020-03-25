@@ -149,6 +149,12 @@ export default {
 }
 </script>
 
+<style>
+.office svg, .wildfire svg{
+  width: 3vw;
+}
+</style>
+
 <style scoped>
 section{
   position: relative;
@@ -170,9 +176,7 @@ section{
   z-index: 5;
 }
 
-.office svg, .wildfire svg{
-  width: 3vw;
-}
+
 #fire-0 {
     top: 0;
 }

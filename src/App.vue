@@ -6,6 +6,15 @@
       <section style="background-color: #000000; color: #FFFFFF; padding-top: 9.375vw;">
         <BigFadeInText />
         <Map />
+        <aside>
+          <MapKey />
+          <!--<p>Total Fires</p>
+          <h1 id="fire-num">8,527</h1>
+          <p>Insurance Claim Damages</p>
+          <h1>$<span id="damage-num">12B</span></h1>
+          <p>Acres Burned</p>
+          <h1 id="burn-num">1,893,913</h1>-->
+        </aside>
       </section>
     </main>
   </div>
@@ -15,13 +24,15 @@
 import Header from './components/Header.vue'
 import BigFadeInText from './components/BigFadeInText.vue'
 import Map from './components/Map.vue'
+import MapKey from './components/MapKey.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     BigFadeInText,
-    Map
+    Map,
+    MapKey
   }
 }
 </script>
@@ -69,7 +80,6 @@ h1, h2, h3 {
 }
 
 @media screen and (min-width: 992px){
-
   h1 {
     font-size: 7.5vw;
     line-height: 6.25vw;
@@ -84,6 +94,12 @@ h1, h2, h3 {
     font-size: 1.5vw;
     letter-spacing: -.031vw;
     line-height: 1.75vw;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+  p {
+    font-size: 3.125vw;
   }
 }
 
