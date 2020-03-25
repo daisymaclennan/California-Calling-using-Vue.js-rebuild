@@ -153,13 +153,25 @@ export default {
 section{
   position: relative;
 }
+
+/*@media screen and (max-width: 991px) and (min-width: 768px){
+  section {
+    margin-left: 0;
+    width: 120%;
+  }
+}*/
+@media screen and (max-width: 991px){
+  section {
+    width: 134%;
+  }
+}
 .office, .wildfire{
   position: absolute;
   z-index: 5;
 }
 
 .office svg, .wildfire svg{
-  width: 3.5vw;
+  width: 3vw;
 }
 #fire-0 {
     top: 0;
