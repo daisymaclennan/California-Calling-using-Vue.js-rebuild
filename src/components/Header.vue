@@ -97,4 +97,10 @@ aside{
   }
 }
 
+@media screen and (max-width: 992px){
+  section p:first-of-type{
+    margin-bottom: 7vw;
+  }
+}
+
 </style>

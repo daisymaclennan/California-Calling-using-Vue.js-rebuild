@@ -265,4 +265,24 @@ h1, h2, h3 {
     line-height: 1.75vw;
   }
 }
+
+@media screen and (max-width: 992px){
+  h1{
+    font-size: 12.8vw;
+    line-height: 12.8vw;
+  }
+
+  p{
+    font-size: 4.267vw;
+    letter-spacing: -.133vw;
+    line-height: 6.4vw;
+  }
+
+  .button{
+    padding: 19.5px 21px;
+    font-size: 4.267vw;
+    letter-spacing: -.133vw;
+    line-height: 6.4vw;
+  }
+}
 </style>
