@@ -17,6 +17,7 @@
         </aside>
       </section>
     </main>
+    <Banner />
   </div>
 </template>
 
@@ -25,6 +26,7 @@ import Header from './components/Header.vue'
 import BigFadeInText from './components/BigFadeInText.vue'
 import Map from './components/Map.vue'
 import MapKey from './components/MapKey.vue'
+import Banner from './components/Banner.vue'
 
 export default {
   name: 'App',
@@ -32,7 +34,8 @@ export default {
     Header,
     BigFadeInText,
     Map,
-    MapKey
+    MapKey,
+    Banner
   }
 }
 </script>
@@ -49,6 +52,11 @@ body{
   overflow-x: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
 
 .outline-text--white{
@@ -79,15 +87,18 @@ h1, h2, h3 {
   font-stretch: normal;
 }
 
+p{
+  line-height: 100%;
+}
+
 @media screen and (min-width: 992px){
   h1 {
     font-size: 7.5vw;
     line-height: 6.25vw;
   }
   p {
-    font-size: 1.5vw;
+    font-size: 3.4vw;
     letter-spacing: -.031vw;
-    line-height: 2.25vw;
   }
   .button {
     padding: 19.5px 42px;
