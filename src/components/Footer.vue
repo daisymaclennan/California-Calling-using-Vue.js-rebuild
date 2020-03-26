@@ -13,40 +13,18 @@
 </template>
 
 <script>
+import infinityRotateBackwards from '../lib/infinityRotateBackwards'
+
+document.addEventListener("DOMContentLoaded", function() {
+  const textOne = document.querySelector('.date-list--one')
+  const textTwo = document.querySelector('.date-list--two')
+
+  infinityRotateBackwards(textOne, textTwo, 10000)
+});
+
 export default {
   name: 'Footer'
 }
-
-/*const dateOne = document.querySelector('date-list--one')
-const dateTwo = document.querySelector('date-list--two')
-
-function infinityRotateBackwards(titleOne, titleTwo, duration){
-  //Gets the width of each title
-  const textWidth = titleOne.getBoundingClientRect().width;
-
-  //Starts at original position and ends at negative its width
-  titleOne.animate([
-  { transform: 'translateX(0px)' },
-  { transform: 'translateX(-' + textWidth + 'px)' }
-], {
-  // timing options
-  duration: duration,
-  iterations: Infinity,
-  easing: 'cubic-bezier(0, 0, 0, 0)',//constant speed
-})
-  //Starts at where the end of the first title would end then returns to its original position
-  titleTwo.animate([
-    { transform: 'translateX(' + textWidth + 'px)' },
-    { transform: 'translateX(0px)' }
-  ], {
-    // timing options
-    duration: duration,
-    iterations: Infinity,
-    easing: 'cubic-bezier(0, 0, 0, 0)',//constant speed
-  })
-}
-
-infinityRotateBackwards(dateOne, dateTwo, 1)*/
 </script>
 
 <style scoped>
@@ -75,6 +53,22 @@ footer{
   display: flex;
   flex-direction: row;
   text-transform: uppercase;
+}
+
+.rotating-banner h1{
+  position: absolute;
+}
+
+@media screen and (min-width: 992px){
+  .rotating-banner{
+    height: 7vw;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .rotating-banner{
+    height: 12.8vw;
+  }
 }
 
 .rotating-banner span{
