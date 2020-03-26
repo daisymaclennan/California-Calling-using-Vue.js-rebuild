@@ -18,6 +18,7 @@
       </section>
     </main>
     <GalleryWithText />
+    <Footer />
     <Banner />
   </div>
 </template>
@@ -29,6 +30,7 @@ import Map from './components/Map.vue'
 import MapKey from './components/MapKey.vue'
 import Banner from './components/Banner.vue'
 import GalleryWithText from './components/GalleryWithText.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
@@ -38,7 +40,8 @@ export default {
     Map,
     MapKey,
     Banner,
-    GalleryWithText
+    GalleryWithText,
+    Footer
   }
 }
 </script>
@@ -98,6 +101,11 @@ p{
   h1 {
     font-size: 7.5vw;
     line-height: 6.25vw;
+  }
+  h2 {
+    font-size: 3.25vw;
+    letter-spacing: -.063vw;
+    line-height: 3.5vw;
   }
   p {
       font-size: 1.5vw;
