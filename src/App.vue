@@ -100,8 +100,9 @@ p{
     line-height: 6.25vw;
   }
   p {
-    font-size: 3.4vw;
-    letter-spacing: -.031vw;
+      font-size: 1.5vw;
+      letter-spacing: -.031vw;
+      line-height: 2.25vw;
   }
   .button {
     padding: 19.5px 42px;
@@ -110,6 +111,7 @@ p{
     line-height: 1.75vw;
   }
 }
+
 
 @media screen and (max-width: 991px) and (min-width: 768px){
   p {
