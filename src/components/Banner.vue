@@ -21,8 +21,8 @@ export default {
 
 <style scoped>
   .banner{
-    //temporary while I develop the rest of page
-    display: none;
+    /*temporary while I develop the rest of page*/
+    display: none!important;
     max-height: 300px;
     height: 17.067vw;
 
