@@ -17,6 +17,7 @@
         </aside>
       </section>
     </main>
+    <GalleryWithText />
     <Banner />
   </div>
 </template>
@@ -27,6 +28,7 @@ import BigFadeInText from './components/BigFadeInText.vue'
 import Map from './components/Map.vue'
 import MapKey from './components/MapKey.vue'
 import Banner from './components/Banner.vue'
+import GalleryWithText from './components/GalleryWithText.vue'
 
 export default {
   name: 'App',
@@ -35,7 +37,8 @@ export default {
     BigFadeInText,
     Map,
     MapKey,
-    Banner
+    Banner,
+    GalleryWithText
   }
 }
 </script>
