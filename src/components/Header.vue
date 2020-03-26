@@ -1,16 +1,6 @@
 <template>
   <header class="header">
-    <div class="line" style="margin-top: 0vh; visibility: inherit; opacity: 1;">
-      <svg viewBox="0 0 1 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-          <desc>Created with Sketch.</desc>
-          <defs></defs>
-          <g id="4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="CC-v4" transform="translate(-800.000000, -660.000000)" fill="#AAAAAA" fill-rule="nonzero">
-                  <rect id="Rectangle-Copy" x="800" y="660" width="1" height="3278"></rect>
-              </g>
-          </g>
-      </svg>
+    <div class="gradient-line">
     </div>
     <section>
         <article>
@@ -45,6 +35,12 @@
 </script>
 
 <style scoped>
+.gradient-line{
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: linear-gradient(#fff, #000) no-repeat center/2px 100%;
+}
 .header{
   background-color: #000;
   color: #FFF;
@@ -55,6 +51,7 @@
 
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 15px;
 }
 
 section{
