@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="map-key">
     <div class="office">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12">
         <circle cx="284" cy="514" r="6" fill="#FFF" fill-rule="evenodd" transform="translate(-278 -508)"></circle>
@@ -22,9 +22,23 @@ export default {
 </script>
 
 <style scoped>
+@media screen and (min-width: 962px){
+  .map-key{
+    position: absolute;
+    top: 55%;
+    left: 52vw;
+  }
+
+  .wildfire{
+    padding-left: 15%;
+    padding-top: 8%;
+  }
+}
+
 p{
   padding-left: 2.1%;
   margin: 8px 0;
+  white-space: nowrap;
 }
 
 div > div{

@@ -3,7 +3,7 @@
     <Header />
 
     <main>
-      <section style="background-color: #000000; color: #FFFFFF; padding-top: 9.375vw;">
+      <section style="position: relative; background-color: #000000; color: #FFFFFF; padding-top: 9.375vw;">
         <BigFadeInText />
         <Map />
         <aside>
