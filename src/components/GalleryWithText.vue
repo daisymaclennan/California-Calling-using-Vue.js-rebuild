@@ -50,6 +50,7 @@ section{
 
   h1{
     margin-top: -1.5vw;
+    margin-bottom: 4vw;
   }
   img, p{
     width: 66.66667%;
