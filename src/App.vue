@@ -6,14 +6,9 @@
       <section style="position: relative; background-color: #000000; color: #FFFFFF; padding-top: 9.375vw;">
         <BigFadeInText />
         <Map />
-        <aside>
+        <aside style="margin-top: -40vw;">
           <MapKey />
-          <!--<p>Total Fires</p>
-          <h1 id="fire-num">8,527</h1>
-          <p>Insurance Claim Damages</p>
-          <h1>$<span id="damage-num">12B</span></h1>
-          <p>Acres Burned</p>
-          <h1 id="burn-num">1,893,913</h1>-->
+          <FireStatistics />
         </aside>
       </section>
     </main>
@@ -31,6 +26,7 @@ import MapKey from './components/MapKey.vue'
 import Banner from './components/Banner.vue'
 import GalleryWithText from './components/GalleryWithText.vue'
 import Footer from './components/Footer.vue'
+import FireStatistics from './components/FireStatistics.vue'
 
 export default {
   name: 'App',
@@ -41,7 +37,8 @@ export default {
     MapKey,
     Banner,
     GalleryWithText,
-    Footer
+    Footer,
+    FireStatistics
   }
 }
 </script>

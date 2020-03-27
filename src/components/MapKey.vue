@@ -22,7 +22,16 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (min-width: 962px){
+@media screen and (max-width: 1000 im px){
+  .map-key{
+    position: relative;
+    z-index: 6;
+    margin-left: 16.66667%;
+    display: block;
+    margin-bottom: 10vw;
+  }
+}
+@media screen and (min-width: 1000px){
   .map-key{
     position: absolute;
     top: 55%;
