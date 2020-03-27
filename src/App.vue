@@ -13,6 +13,8 @@
       </section>
     </main>
     <GalleryWithText />
+    <DarkDesign />
+    <LightDesign />
     <Footer />
     <Banner />
   </div>
@@ -27,6 +29,8 @@ import Banner from './components/Banner.vue'
 import GalleryWithText from './components/GalleryWithText.vue'
 import Footer from './components/Footer.vue'
 import FireStatistics from './components/FireStatistics.vue'
+import DarkDesign from './components/DarkDesign.vue'
+import LightDesign from './components/LightDesign.vue'
 
 export default {
   name: 'App',
@@ -38,7 +42,9 @@ export default {
     Banner,
     GalleryWithText,
     Footer,
-    FireStatistics
+    FireStatistics,
+    DarkDesign,
+    LightDesign
   }
 }
 </script>
@@ -103,6 +109,11 @@ p{
     font-size: 3.25vw;
     letter-spacing: -.063vw;
     line-height: 3.5vw;
+  }
+  h3{
+    font-size: 2.25vw;
+    letter-spacing: -.031vw;
+    line-height: 2.5vw;
   }
   p {
       font-size: 1.5vw;

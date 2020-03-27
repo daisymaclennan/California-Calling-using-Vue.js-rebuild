@@ -28,7 +28,7 @@ section{
   background-color: #FFFFFF;
   overflow-y: visible;
   position: relative;
-  z-index: 10;
+  z-index: 12;
 }
 
 
