@@ -65,7 +65,6 @@ export default {
 section{
   background-color: #000;
   color: #fff;
-  overflow: hidden;
   padding-top: 25%;
   position: relative;
   z-index: 10;
