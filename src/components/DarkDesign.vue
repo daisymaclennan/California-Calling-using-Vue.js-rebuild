@@ -70,6 +70,27 @@ section{
   z-index: 10;
 }
 
+
+@media screen and (max-width: 991px){
+  h3{
+    font-size: 4.688vw;
+    letter-spacing: -.065vw;
+    line-height: 5.208vw;
+  }
+  .artist{
+    margin-top: 4vw;
+  }
+  img, .quote{
+    width: 66.66667%;
+    display: block;
+    margin-left: 16.66667%;
+  }
+
+  .carousel--buttons{
+    display: none;
+  }
+}
+
 @media screen and (min-width: 992px){
   section{
     padding-top: 11.25vw;

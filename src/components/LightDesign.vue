@@ -1,5 +1,6 @@
 <template>
   <section>
+    <img class="rotate" src="../assets/img/cc-circle-2.png" alt="" />
     <article>
       <div class="grid">
         <div class="title">
@@ -63,6 +64,20 @@ export default {
 </script>
 
 <style scoped>
+/*Rotation animation*/
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.rotate{
+  animation: rotation 5s infinite linear;
+}
+
 section{
   background-color: #fff;
   color: #000;
@@ -72,11 +87,39 @@ section{
   z-index: 10;
 }
 
-@media screen and (min-width: 992px){
-  section{
-    padding-top: 11.25vw;
-    padding-bottom: 11.25vw;
+@media screen and (max-width: 991px){
+  h3{
+    font-size: 4.688vw;
+    letter-spacing: -.065vw;
+    line-height: 5.208vw;
   }
+  .artist{
+    margin-top: 4vw;
+  }
+  img{
+    width: 66.66667%;
+    display: block;
+  }
+
+  .carousel--buttons{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .rotate{
+    height: 31.25vw;
+    display: block;
+    margin-bottom: -5px;
+    margin-top: -8vw;
+    margin-right: -13vw;
+    margin-left: auto;
+  }
+  section{
+    padding-bottom: 11.25vw;
+    padding-top: 0;
+  }
+
   .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
