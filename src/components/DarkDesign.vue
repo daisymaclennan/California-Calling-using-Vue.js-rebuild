@@ -67,7 +67,7 @@ section{
   color: #fff;
   padding-top: 25%;
   position: relative;
-  z-index: 10;
+  z-index: 4;
 }
 
 
@@ -124,6 +124,7 @@ section{
   .main-img{
     width: 58.33333%;
     margin-left: 8.33333%;
+    margin-bottom: -20%;
   }
   .carousel--container{
     display: flex;

@@ -61,6 +61,16 @@ body{
   overflow-x: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale;
+  border: 1px solid transparent;
+}
+
+@media screen and (min-width: 992px){
+  #app{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
 }
 
 a{

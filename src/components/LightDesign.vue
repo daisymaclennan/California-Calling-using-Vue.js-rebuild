@@ -83,7 +83,7 @@ section{
   color: #000;
   overflow: hidden;
   position: relative;
-  z-index: 10;
+  z-index: 3;
 }
 
 @media screen and (max-width: 991px){
@@ -141,6 +141,7 @@ section{
     margin-bottom: 5vw;
     margin-left: 8.33333%;
     margin-right: 8.33333%;
+    padding-top: 5%;
   }
   .title{
     width: 25%;

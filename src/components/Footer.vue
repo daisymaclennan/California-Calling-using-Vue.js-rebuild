@@ -9,7 +9,7 @@
       <h2 style="">Mark your calendar for our SF Design Week Studio Crawl. In addition to custom swag, we’ll also have a DJ, a mixologist, and other cool surprises we can’t tell you about yet.</h2>
       <a class="button" href="https://www.eventbrite.com/e/elephant-studio-crawl-san-francisco-design-week-2019-tickets-63313109214" target="_blank" rel="noopener">RSVP</a>
     </section>
-</footer>
+  </footer>
 </template>
 
 <script>
@@ -20,7 +20,12 @@ document.addEventListener("DOMContentLoaded", function() {
   const textTwo = document.querySelector('.date-list--two')
 
   infinityRotateBackwards(textOne, textTwo, 10000)
+
+  window.addEventListener("resize", function(){
+    infinityRotateBackwards(textOne, textTwo, 10000)
+  })
 });
+
 
 export default {
   name: 'Footer'
@@ -50,8 +55,6 @@ footer{
   position: absolute;
   text-align: center;
   white-space: nowrap;
-  display: flex;
-  flex-direction: row;
   text-transform: uppercase;
 }
 

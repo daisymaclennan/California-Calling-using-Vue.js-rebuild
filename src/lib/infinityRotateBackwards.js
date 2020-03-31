@@ -1,6 +1,9 @@
 export default function infinityRotateBackwards(titleOne, titleTwo, duration){
   //Gets the width of each title
   const textWidth = titleOne.getBoundingClientRect().width;
+  console.log("text width", textWidth)
+  titleOne.style.left = "0px";
+  titleTwo.style.left = textWidth + 'px';
 
   //Starts at original position and ends at negative its width
   titleOne.animate([
@@ -14,8 +17,8 @@ export default function infinityRotateBackwards(titleOne, titleTwo, duration){
 })
   //Starts at where the end of the first title would end then returns to its original position
   titleTwo.animate([
-    { transform: 'translateX(' + textWidth + 'px)' },
-    { transform: 'translateX(0px)' }
+    { transform: 'translateX(0px)' },
+    { transform: 'translateX(-' + textWidth + 'px)' }
   ], {
     // timing options
     duration: duration,
