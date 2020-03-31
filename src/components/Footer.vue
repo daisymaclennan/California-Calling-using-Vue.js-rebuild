@@ -38,6 +38,9 @@ footer{
   display: block;
   background-color: #000;
   color: #fff;
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .footer-content{
@@ -48,18 +51,14 @@ footer{
 .rotating-banner{
   background-color: #eee;
   color: #000;
-  transform: rotate(45deg);
-  padding: 8px 0;
-  width: 150%;
-  margin-top: 10vh;
-  position: absolute;
-  text-align: center;
-  white-space: nowrap;
   text-transform: uppercase;
+  transform: rotate(45deg);
+  margin-right: -20%;
 }
 
 .rotating-banner h1{
   position: absolute;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 992px){
