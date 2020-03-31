@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (max-width: 1000 im px){
+@media screen and (max-width: 1000px){
   .map-key{
     position: relative;
     z-index: 6;
