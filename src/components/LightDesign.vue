@@ -164,6 +164,7 @@ section{
     position: absolute;
     left: 8.33333%;
     bottom: 8vw;
+    transform: translateX(4vw);
   }
   .carousel--light, .carousel--light img{
     width: 298px;

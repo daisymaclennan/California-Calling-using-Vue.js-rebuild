@@ -132,6 +132,7 @@ section{
     position: absolute;
     right: 8.33333%;
     bottom: -100px;
+    transform: translateX(-4vw);
   }
   .carousel--dark, .carousel--dark img{
     width: 298px;

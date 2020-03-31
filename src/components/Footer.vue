@@ -53,7 +53,7 @@ footer{
   color: #000;
   text-transform: uppercase;
   transform: rotate(45deg);
-  margin-right: -20%;
+  margin-right: -25%;
 }
 
 .rotating-banner h1{

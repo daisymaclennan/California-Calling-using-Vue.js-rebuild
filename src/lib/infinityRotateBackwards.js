@@ -3,7 +3,7 @@ export default function infinityRotateBackwards(titleOne, titleTwo, duration){
   const textWidth = titleOne.getBoundingClientRect().width;
   console.log("text width", textWidth)
   titleOne.style.left = "0px";
-  titleTwo.style.left = textWidth + 'px';
+  titleTwo.style.left = "calc(" + textWidth + 'px + 33%)';
 
   //Starts at original position and ends at negative its width
   titleOne.animate([
