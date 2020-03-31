@@ -82,7 +82,6 @@ section{
   background-color: #fff;
   color: #000;
   overflow: hidden;
-  padding-top: 25%;
   position: relative;
   z-index: 10;
 }
@@ -93,16 +92,32 @@ section{
     letter-spacing: -.065vw;
     line-height: 5.208vw;
   }
+  .carousel--container{
+    margin-bottom: 7vw;
+  }
+  .title{
+    margin-bottom: 5vw;
+  }
+  .quote{
+    margin-bottom: 7vw;
+  }
   .artist{
     margin-top: 4vw;
   }
-  img{
+  img, .quote, .title{
     width: 66.66667%;
     display: block;
+    margin-left: 16.66667%;
   }
 
   .carousel--buttons{
     display: none;
+  }
+
+  .rotate{
+    margin-right: -30%;
+    margin-left: auto;
+    margin-top: -25%;
   }
 }
 

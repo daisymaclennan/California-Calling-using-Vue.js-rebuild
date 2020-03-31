@@ -77,15 +77,23 @@ section{
     letter-spacing: -.065vw;
     line-height: 5.208vw;
   }
+  .main-img{
+    margin-bottom: 7vw;
+  }
+  .title{
+    margin-bottom: 5vw;
+  }
+  .quote{
+    margin-bottom: 7vw;
+  }
   .artist{
     margin-top: 4vw;
   }
-  img, .quote{
+  img, .quote, .title{
     width: 66.66667%;
     display: block;
     margin-left: 16.66667%;
   }
-
   .carousel--buttons{
     display: none;
   }
